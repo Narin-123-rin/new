@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUB Homework</title>
+    <link rel="stylesheet" href="Basic.css">
+    <style>
+        #animation {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: boxAnimation;
+        animation-duration: 4s;
+        *animation-delay: 2s;*/
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes boxAnimation {
+        0% {background-color: antiquewhite;}
+        25%{background-color: aqua;}
+        50%{background-color: blanchedalmond;}
+        100%{background-color: brown;}
+        
+      }
+    </style>
+    <style>
+        div#myDiv{
+     width: 150px;
+     height: 150px;
+     background-color: yellow;
+     border: 1px solid black;
+     box-shadow: 5px 10px #888888;
+     /*transform: translate(50px,100px);*/
+     /*transform: rotate(20deg);*/
+     /*transform: rotate(-20deg);*/
+     /*transform: scale(1,2);*/
+     /*transform: scaleX(2);*/
+     /*transform: scaleY(0.5);*/
+     /*transform: skewX(20deg);*/
+
+   }
+
+      #myDiv {
+        /*transform: translate(50px,100px);*/
+        transform: rotate(20deg);
+        /*transform: rotate(-20deg);*/
+        /*transform: scale(1,2);*/
+        /*transform: scaleX(2);*/
+        /*transform: scaleY(0.5);*/
+        /*transform: skewX(20deg);*/
+         /*transform: skew(20deg,10deg);*/
+      }
+   </style>
+
+   <style>
+   .container {
+     width: 180px;
+     height: 180px;
+     border: 1px solid lightgray;
+     margin: 30px;
+     perspective: 600px;
+   }
+
+   .box {
+     width: 100%;
+     height: 100%;
+     background-color: green;
+     line-height: 180px;
+     text-align: center;
+     font-size: 20px;
+     /*transform: rotateX(45deg);*/
+     /*transform: rotateY(45deg);*/
+     /*transform: rotateZ(45deg);*/
+     transform: translateZ(-100px);
+   }
+
+   </style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Exercise 1: Book Store -->
+    <h1 style="text-align: center; background-color: rgb(255, 0, 200);">
+        Book Store
+    </h1>
+
+    <p2>
+        A bookstore is a shop or website where people can buy books.
+        It offers different types of books for readers with different interests.
+    </p2>
+
+    <div style="background-color: rgb(0, 255, 183);">
+        <h1>Types of Books</h1>
+    </div>
+
+    <ul>
+        <li>Horror and Thriller</li>
+        <li>Fantasy</li>
+        <li>Romance</li>
+        <li>Novels</li>
+        <li>Historical Fiction</li>
+        <li>Mystery and Crime</li>
+        <li>Science Fiction</li>
+        <li>Comic Books</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Best-Selling Books</th>
+            <th>Most Expensive Books</th>
+        </tr>-
+        <tr>
+            <td>1.</td>
+            <td>Comic Books and Manga</td>
+            <td>Rare Comic Books and Manga</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Novels</td>
+            <td>Rare or Collection Novels</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Romance and Thriller Books</td>
+            <td>Rare First Edition</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Exercise 2: Tena -->
+    <h1 style="color: black;">Exercise 2</h1>
+
+    <hr>
+
+    <h2 style="text-align: center; background-color: rgb(0, 183, 255);">
+        Tena - Cambodian Singer and Songwriter
+    </h2>
+
+    <div>Tena - Cambodian Singer</div>
+
+    <img src="tena.jpg" alt="Tena Khimphun" width="300" height="300">
+<br>
+    <p1>Tena (ថេណា), also known as Tena Khimphun, is a well-known Cambodian singer, songwriter, and musician. He is recognized for his uniquemusical style, beautiful voice, and emotional songs. He is one ofthe artists associated with Cambodia's growing Original Song movement.Tena has attracted many young Cambodian listeners through his music,especially people who enjoy romantic, sad, and meaningful songs.Tena is not only a singer but also a songwriter and guitarist.He creates music that expresses different feelings and experiences in life.
+    </p1>
+
+    <h2 style="color: rgb(180, 100, 250);">Tena Songs</h2>
+
+    <a href="#section">លួចស្នេហ៍ដួងចន្ទ</a>
+
+    <a href="tenasong.mp4" download>Download File</a>
+
+    <h2>🎧</h2>
+
+    <div id="section">
+        <video width="640" height="360" poster="cover.jpg" controls>
+            <source src="tenasong.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </div>
+
+    <h1>Animated Images</h1>
+
+    <img src="tena.GIF" alt="Animated Image"
+         style="width: 600px; height: 300px;">
+
+    <h2>Scalable Vector Graphics (SVG): Concepts & Advantages</h2>
+
+    <svg width="400" height="150">
+        <rect x="10" y="20" width="200" height="100"
+              stroke="red" stroke-width="6" fill="blue" />
+
+        <text x="110" y="80" font-size="20"
+              text-anchor="middle" fill="white">
+            Who are you?
+        </text>
+    </svg>
+
+    <hr>
+    <h1 style="color: black;">Exercise 3</h1>
+
+    <hr>
+
+    <p>
+        In this example, the image will float to the right
+        in the div, and the text will wrap around the image.
+    </p>
+
+    <h1 style="text-align: center; background-color: rgb(0, 170, 255);">
+        CSS Float: Right
+    </h1>
+
+    <div>
+        <img src="hello.jpeg" alt="Independence Day"
+             width="300" height="250"
+             style="float: right; margin-left: 20px;">
+
+        <h2 style="color: blue;">Cambodia Independence Day</h2>
+
+        <article>
+            Cambodia Independence Day is celebrated every year on November 9.
+            It commemorates Cambodia's independence from France on November 9, 1953.
+            King Norodom Sihanouk played an important role in leading Cambodia
+            to independence.
+            On this special day, Cambodian people celebrate by displaying
+            national flags and participating in ceremonies. The King lights
+            the Victory Flame at the Independence Monument in Phnom Penh.
+            People also remember the heroes who contributed to the country's freedom.
+            Independence Day is an important national holiday because it represents
+            freedom, peace, unity and national pride. We should be proud of our
+            country and respect its history.
+        </article>
+        
+
+        <h3>Happy Independence Day, Cambodia! 🇰🇭</h3>
+
+        <div style="clear: both;"></div>
+    </div>
+
+    <hr>
+
+    <!-- Display Property -->
+    <h1 style="text-align: center;">The Display Property</h1>
+
+    <h2>display: none:</h2>
+    <p class="ex1">
+        <span>Success</span>
+        <span>Take</span>
+        <span>Time</span>
+    </p>
+
+    <h2>display: inline:</h2>
+    <p class="ex2">
+        <span>Enjoy</span>
+        <span>every</span>
+        <span>moment</span>
+    </p>
+
+    <h2>display: block:</h2>
+    <p class="ex3">
+        <span>Make</span>
+        <span>it</span>
+        <span>happen</span>
+    </p>
+
+    <h2>display: inline-block:</h2>
+    <p class="ex4">
+        <span>Never</span>
+        <span>Give</span>
+        <span>up</span>
+    </p>
+
+    <h2>display: flex:</h2>
+    <p class="ex5">
+        <span>Believe</span>
+        <span>in</span>
+        <span>yourself</span>
+    </p>
+
+    <h2>display: grid:</h2>
+    <p class="ex6">
+        <span>Never</span>
+        <span>give</span>
+        <span>up</span>
+    </p>
+
+    <hr>
+
+    <!-- CSS Box -->
+    <h1>HTML DIV Example as a Container - CSS BOX</h1>
+
+    <div style="background: lightblue;">
+
+        <div class="city">
+            <h2>Khmer New Year</h2>
+            <p>Khmer New Year is celebrated in April every year.</p>
+            <p>People enjoy traditional games, dancing, and visiting pagodas.</p>
+        </div>
+
+        <div class="city">
+            <h2>Chum Ben</h2>
+            <p>Pchum Ben is a traditional festival to remember deceased ancestors.</p>
+            <p>People bring food to pagodas to offer to monks and their ancestors.</p>
+        </div>
+
+        <div class="city">
+            <h2>Water Festival (Bon Om Touk)</h2>
+            <p>The Water Festival celebrates the changing flow of the Tonle Sap River.</p>
+            <p>People enjoy exciting boat races, fireworks, and celebrations.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+<h1>HTML DIV Example as a Container - Flex BOX</h1>
+
+< class="flex-container">
+
+    <div class="flexbox">
+        <h2>Visak Bochea</h2>
+        <p>Visak Bochea celebrates the birth, enlightenment, and passing away of Buddha.</p>
+        <p>People visit temples and participate in religious ceremonies.</p>
+    </div>
+
+    <div class="flexbox">
+        <h2>Meak Bochea</h2>
+        <p>Meak Bochea is an important Buddhist festival in Cambodia.</p>
+        <p>Buddhists visit pagodas, pray, and listen to Buddha's teachings.</p>
+    </div>
+
+    <div class="flexbox">
+        <h2>Angkor Sankranta</h2>
+        <p>Angkor Sankranta is a special celebration during Khmer New Year in Siem Reap.</p>
+        <p>People enjoy traditional games, cultural performances, and Khmer food.</p>
+    </div>
+    <hr>
+<div id="box">Welcome to AUB </div>
+</body>
+<!-- Exercise 4 -->
+ <h1 style="color: aqua;" Exercise 4></h1>
+ <p>Welcome to learning class of Animation!</p>
+
+   <div id="animation">Animation</div>
+
+   <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+   <h1>Welcome to learning class of 2D transformation!</h1>
+
+   <div id="myDiv">
+   This div element is moved to different direction from its current position.
+   </div>
+
+   <div id="myDiv">
+   This div element is moved to different direction from its current position.
+   </div>
+
+
+   <h1>Welcome to learning class of 3D transformation!</h1>
+
+   <div class="container">
+      <div class="box">rotateX(45deg)</div>
+   </div>
+<h1>Welcome to learning transitions of HTML5!</h1>
+   <p>Hover over the div element below, to see the transition effect:</p>
+   <div id="Jennie"> Jennie</div>
+   <hr>
+   <h1>Cubic Bezier Curve Anatomy !</h1>
+   <p>Hover over the div element below, to see the Cubic Bezier Curve Anatomy effect:</p>
+   <div id="Teayung">Teayung</div>
+
+   <hr>
+   <h1>Animation !</h1>
+   <p>Hover over the div element below, to see the animation effect:</p>
+   <div id="Jungkook">Animation</div>
+   <h1>CSS animation-direction Property</h1>
+   <p>The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles. The following example uses the value "alternate" to make the animation run forwards first, then backwards:</p>
+
+<img src="muichiro.jpg" alt="Mui" id="floatImage">
+</html>
+   
