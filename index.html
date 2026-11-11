@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form</h1>
+    <form action="submit.php" method="POST">
+    <label for="name"> Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br>
+
+    <label for="email"> Email:</label>
+    <input type="email" id="email"  placeholder="Enter your email" required>
+    <br>
+
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required>
+    <br>
+
+    <label for="birthday">Birth date:</label>
+    <input type="date" id="birthday" name="birthdate" placeholder="Enter your Birthday" required>
+    <br>
+
+    <label for="birthday">Enter a date before 1980-01-01</label>
+    <input type="date" id="birthday" name="birthdate" max="1980-01-01" required>
+    <br>
+
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-01" required>
+    <br>
+
+    <p style="text-align: center;">choose your favorite Web language</p>
+    <fieldset>
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <Label for="css">CSS</Label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="JavaScript">JavaScript</label>
+        <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
+    </fieldset>
+    <br>
+    <p style="text-align: center;">The <strong>input type="checkbox"</strong>defines a checkbox:</p>
+    <fieldset>
+    <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
+    <label for="vehicle">I have a bike</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="car">
+    <label for="vehicle2">I haves a car</label><br>
+    <input type="checkbox" id="vehicle" name="vehicle" value="Boat">
+    <label for="checkbox">I have a boat</label><br>
+    </fieldset>
+    <br>
+    <p style="text-align: center;">The select element defines a drop-down list:</p>
+    <fieldset>
+    <label for="cars">Choose a car</label>
+    <select id="cars" name="cars">
+        <option value=""></option>
+        <option value="volvo">volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">fiat</option>
+        <option value="audi">audi</option>
+    </select>
+    </fieldset>
+    <br>
+    <p style="text-align: center;">The datalist element specifies a list of pre-defined options for an input element.</p>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <br>
+    </datalist>
+        <label for="message">Message:</label> 
+        <textarea text="message" id="message" name="message" placeholder="Enter your message"></textarea>
+        <br><br>
+    
+        <button style="background-color:rgb(0, 179, 255) ;" type="submit">send submit</button>
+        <br> 
+
+   
+    </form>
+    </div>
+</body>
+</html>
